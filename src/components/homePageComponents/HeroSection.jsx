@@ -22,7 +22,7 @@ export default function HeroSection() {
     return (
         <div className="overflow-x-hidden overflow-y-auto"> 
            
-            <section className="relative w-full min-h-[40vh] sm:min-h-[80vh] md:min-h-screen bg-white flex flex-col items-center justify-center text-center overflow-hidden"
+            <section className="relative w-full min-h-[30vh] sm:min-h-[80vh] md:min-h-screen bg-white flex flex-col items-center justify-center text-center overflow-hidden"
                 style={{
                     backgroundImage: `url(${Abstract})`,
                     backgroundSize: "cover",
@@ -31,17 +31,17 @@ export default function HeroSection() {
                 }}
             >
                 
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-[audiowide] font-bold text-[#1398c8] mb-6 mt-0 lg:mt-10 leading-tight">
+                <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-[audiowide] font-bold text-[#1398c8] sm:mb-6 mb-2 mt-0 lg:mt-10 leading-tight">
                     A <span className="text-[#0c2d44]">Digital Product </span> Studio{" "}
                     <br className="hidden sm:block" /> that will Work
                 </h1>
 
                 
-                <div className="flex flex-row sm:flex-row gap-3 sm:gap-2 z-10">
-                    <button className="px-6 py-3 bg-gray-800 text-white font-semibold rounded-md hover:bg-gray-700 transition">
+                <div className="flex flex-row sm:flex-row gap-3 sm:gap-2 z-10 mb-6">
+                    <button className="px-4 sm:px-4 sm:py-2 py-3 bg-[#0c2d44] text-sm sm:text-lg text-white font-semibold rounded-md hover:bg-gray-700 transition">
                         Our Works
                     </button>
-                    <button className="px-6 py-3 bg-[#1398c8] text-white font-semibold rounded-md hover:bg-[#115d79] transition">
+                    <button className="px-4 sm:px-4 sm:py-2 py-3 bg-[#1398c8] text-sm sm:text-lg text-white font-semibold rounded-md hover:bg-[#115d79] transition">
                         Contact Us
                     </button>
                 </div>
