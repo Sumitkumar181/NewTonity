@@ -22,7 +22,7 @@ export default function HeroSection() {
     return (
         <div className="overflow-x-hidden overflow-y-auto"> 
            
-            <section className="relative w-full min-h-[60vh] sm:min-h-[80vh] md:min-h-screen bg-white flex flex-col items-center justify-center text-center overflow-hidden"
+            <section className="relative w-full min-h-[40vh] sm:min-h-[80vh] md:min-h-screen bg-white flex flex-col items-center justify-center text-center overflow-hidden"
                 style={{
                     backgroundImage: `url(${Abstract})`,
                     backgroundSize: "cover",
