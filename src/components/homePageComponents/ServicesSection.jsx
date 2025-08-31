@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import serviceBg from "../../assets/HomePageImage/servicesBg.jpg";
+import serviceBg4 from "../../assets/HomePageImage/servicesBg4.avif";
 import serviceBg2 from "../../assets/HomePageImage/servicesBg2.jpg";
 
 const line1 = "Work one step smarter and efficiently".split("");
@@ -48,7 +48,7 @@ export default function ServicesSection() {
         <div>
             <div
                 className="grid w-screen py-16 bg-cover bg-center relative"
-                style={{ backgroundImage: `url(${serviceBg})` }}
+                style={{ backgroundImage: `url(${serviceBg4})` }}
             >
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#0c2d44]/80 to-[#1398c8]/70"></div>
