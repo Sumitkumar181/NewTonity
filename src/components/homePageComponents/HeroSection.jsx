@@ -61,7 +61,7 @@ export default function HeroSection() {
 
             
             <div className="bg-[#0c2d44] flex items-center justify-center py-6 px-4 sm:px-8 overflow-x-auto scrollbar-hide">
-                <ul className="flex flex-row flex-nowrap gap-6 sm:gap-10 md:gap-18">
+                <ul className="flex flex-row flex-nowrap gap-10 sm:gap-10 md:gap-18">
                     {logos.map((logo, i) => (
                         <motion.li
                             key={i}
@@ -74,7 +74,7 @@ export default function HeroSection() {
                             <img
                                 src={logo.src}
                                 alt={logo.alt}
-                                className="h-12 w-auto object-contain"
+                                className="h-10 w-auto object-contain"
                             />
                         </motion.li>
                     ))}
