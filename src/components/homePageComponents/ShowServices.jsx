@@ -6,6 +6,7 @@ import seo from "../../assets/HomePageImage/seo.gif";
 import digital from "../../assets/HomePageImage/digital.gif";
 import Ecommerce from "../../assets/HomePageImage/Ecommerce.gif";
 
+
 export default function ShowServices() {
     const services = [
         {

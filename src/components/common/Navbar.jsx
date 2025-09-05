@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import logo from "../../assets/logos/logo.png";
 import { Link } from 'react-router-dom';
+import { MdArrowDropDown } from "react-icons/md";
+
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,20 +17,25 @@ export default function Navbar() {
 
                
                 <div className="hidden lg:flex space-x-6 font-medium text-[#0c2d44]">
-                    <Link to="/" className="hover:text-[#1398c8] font-[audiowide] font-semibold">Home</Link>
-                    <Link to="about" className="hover:text-[#1398c8] font-[audiowide] font-semibold">About Us</Link>
-                    <Link to="services" className="hover:text-[#1398c8] font-[audiowide] font-semibold">Services</Link>
-                    <Link className="hover:text-[#1398c8] font-[audiowide] font-semibold">Our Work</Link>
-                    <Link className="hover:text-[#1398c8] font-[audiowide] font-semibold">StartUp Solution</Link>
-                    <Link className="hover:text-[#1398c8] font-[audiowide] font-semibold">Website/Software</Link>
+                    <span className='flex items-center gap-1 hover:text-[#1398c8]'>
+                    <Link to="about" className=" font-[inter] font-semibold">About Us </Link>
+                        <MdArrowDropDown size={24} />
+                    </span>
+                    <span className='flex items-center hover:text-[#1398c8] gap-1'>
+                        <Link to="services" className=" font-[inter] font-semibold">Services</Link>
+                        <MdArrowDropDown size={24} />
+                    </span>
+                    <Link className="hover:text-[#1398c8] font-[inter] font-semibold">Our Work</Link>
+                    <Link className="hover:text-[#1398c8] font-[inter] font-semibold">StartUp Solution</Link>
+                    <Link className="hover:text-[#1398c8] font-[inter] font-semibold">Website/Software</Link>
                 </div>
 
                 
-                <div className="hidden lg:block">
-                    <Link className="bg-[#1398c8] text-white font-bold hover:bg-[#0c2d44] rounded-lg px-6 py-2 transition">
+                {/* <div className="hidden lg:block">
+                    <Link className="bg-[#1398c8] text-white font-bold hover:bg-[#0c2d44] font-[inter] rounded-lg px-6 py-2 transition">
                         Contact Us
                     </Link>
-                </div>
+                </div> */}
 
                
                 <div className="lg:hidden">
