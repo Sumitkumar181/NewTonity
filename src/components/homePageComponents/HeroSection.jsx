@@ -42,11 +42,11 @@ export default function HeroSection() {
                     </h1>
 
                     <div className="flex flex-row gap-3 sm:gap-6 mb-6">
-                        <button className="px-4 sm:px-20 sm:py-4 py-3 bg-[#1398c8] text-sm sm:text-xl text-white font-[inter] font-bold   hover:bg-[#0d6a8b] transition">
-                            Our Works
+                        <button className="relative px-4 sm:px-20 sm:py-3 py-3 bg-[#1398c8] text-sm sm:text-xl text-white font-[inter] font-bold   hover:bg-[#0d6a8b] transition-transform skew-x-[-12deg]">
+                            <span className="inline-block transform skew-x-[12deg]">Our Works</span>
                         </button>
-                        <button className="px-4 sm:px-20 sm:py-4 py-3 border-2 text-sm sm:text-xl text-white font-[inter] font-bold hover:text-[#1398c8] transition">
-                            Contact Us
+                        <button className="px-4 sm:px-20 sm:py-2 py-3 border-2 text-sm sm:text-xl text-white font-[inter] font-bold hover:text-[#1398c8] transition-transform skew-x-[-12deg]">
+                            <span className="inline-block transform skew-x-[12deg]">Contact Us</span>
                         </button>
                     </div>
                 </div>

@@ -69,7 +69,7 @@ export default function ShowServices() {
                         <img
                             src={service.img}
                             alt={service.title}
-                            className="w-14 h-14 object-contain mb-4"
+                            className="w-14 h-14 object-contain mb-4 "
                         />
                         <h3 className="font-[audiowide] font-semibold text-xl mb-4">
                             {service.title}

@@ -14,7 +14,7 @@ export default function Success() {
 
 
                 <p className="font-[inter] text-sm sm:text-base text-black mb-2">
-                    At Digital Night Owl, we don’t just build businesses, we empower them to thrive.
+                    At Newtonity Technology, we don’t just build businesses, we empower them to thrive.
                     Our major focus is on specializing in Business Development,
                 </p>
 

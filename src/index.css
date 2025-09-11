@@ -9,3 +9,64 @@
 .hero-bg {
     background: radial-gradient(circle at center, #00ff0022 0%, transparent 80%);
 }
+
+
+.lines-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    /* clickable elements not blocked */
+    z-index: 0;
+}
+
+.line {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #1398c8, transparent);
+    opacity: 0.2;
+    animation: moveLine 6s linear infinite;
+}
+
+.line:nth-child(1) {
+    left: 10%;
+    animation-duration: 5s;
+}
+
+.line:nth-child(2) {
+    left: 25%;
+    animation-duration: 6s;
+}
+
+.line:nth-child(3) {
+    left: 40%;
+    animation-duration: 4s;
+}
+
+.line:nth-child(4) {
+    left: 60%;
+    animation-duration: 7s;
+}
+
+.line:nth-child(5) {
+    left: 80%;
+    animation-duration: 5.5s;
+}
+
+@keyframes moveLine {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.custom-border {
+    border-width: 0.5px;
+}
