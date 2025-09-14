@@ -8,6 +8,7 @@ import slack from "../../assets/HomePageImage/slack.svg";
 import spotify from "../../assets/HomePageImage/spotify.svg";
 import zoom from "../../assets/HomePageImage/zoom.svg";
 import zaiper from "../../assets/HomePageImage/zaiper.svg";
+import TextDraw from "../common/TextDraw";
 
 export default function HeroSection() {
     const logos = [
@@ -36,10 +37,7 @@ export default function HeroSection() {
 
                 
                 <div className="relative z-10 flex flex-col items-center">
-                    <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-[audiowide] font-bold text-white sm:mb-6 mb-2 mt-0 lg:mt-10 leading-tight">
-                        A <span className="text-white">Digital Product</span> Studio
-                        <br className="hidden sm:block" /> that will Work
-                    </h1>
+                   <TextDraw/>
 
                     <div className="flex flex-row gap-3 sm:gap-6 mb-6">
                         <button className="relative px-4 sm:px-20 sm:py-3 py-3 bg-[#1398c8] text-sm sm:text-xl text-white font-[inter] font-bold   hover:bg-[#0d6a8b] transition-transform skew-x-[-12deg]">

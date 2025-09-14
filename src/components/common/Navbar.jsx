@@ -18,7 +18,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="w-full top-0 left-0 z-50 bg-white shadow-md">
+        <nav className="w-full top-0 left-0 z-50 bg-black shadow-md">
             <div className="max-w-7xl mx-auto flex items-center justify-between h-20 px-2 sm:px-4">
 
                 <Link to="/" className="h-16 w-44 flex-shrink-0">
@@ -26,7 +26,7 @@ export default function Navbar() {
                 </Link>
 
 
-                <div className="hidden lg:flex space-x-6 font-medium text-[#0c2d44] relative">
+                <div className="hidden lg:flex space-x-6 font-medium text-white relative">
 
 
                     <div className="relative">
