@@ -1,8 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaSkype } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import map from "../../assets/HomePageImage/map.png"
-import logo from "../../assets/logos/newtonity.png"
+
 
 export default function Footer() {
   return (
