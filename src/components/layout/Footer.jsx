@@ -1,22 +1,23 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaSkype } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import map from  "../../assets/HomePageImage/map.png"
+import map from "../../assets/HomePageImage/map.png"
+import logo from "../../assets/logos/newtonity.png"
 
 export default function Footer() {
   return (
     <footer className="relative  text-gray-300 bg-black font-[inter] py-12 overflow-hidden">
 
       
-      <div
+      {/* <div
         className="absolute inset-0  pointer-events-none"
         style={{
-          backgroundImage: `url(${map})`,
+          backgroundImage: `url(${logo})`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "contain", 
         }}
-      ></div>
+      ></div> */}
 
       
       <div className="relative z-10 container mx-auto px-6 lg:px-16">

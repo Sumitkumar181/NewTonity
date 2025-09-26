@@ -4,6 +4,41 @@ import { Link } from 'react-router-dom';
 import { MdArrowDropDown } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import appDevelopment from "../../assets/images/ServicesImage/software development.png";
+import branding from "../../assets/images/ServicesImage/layer.png"
+import digitalMarketing from "../../assets/images/ServicesImage/content-strategy.png"
+import uxDesign from "../../assets/images/ServicesImage/ux-design.png"
+import webDevelopment from "../../assets/images/ServicesImage/web development.png"
+
+const ServicesCard = [
+    {
+        icon: branding,
+        title: "Branding Design",
+        link: "/branding-design",   
+    },
+    {
+        icon: webDevelopment,
+        title: "Web Development",
+        link: "/web-development",
+    },
+    {
+        icon: uxDesign,
+        title: "UI/UX Design",
+        link: "/ui-ux-design",
+    },
+    {
+        icon: digitalMarketing,
+        title: "Digital Marketing",
+        link: "/digital-marketing",
+    },
+    {
+        icon: appDevelopment,
+        title: "App Development",
+        link: "/app-development",
+    },
+];
+
+
 
 
 
@@ -18,15 +53,15 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="w-full top-0 left-0 z-50 bg-black shadow-md">
+        <nav className="w-full top-0 left-0 z-50 bg-[#ffffff] shadow-md">
             <div className="max-w-7xl mx-auto flex items-center justify-between h-20 px-2 sm:px-4">
 
-                <Link to="/" className="h-16 w-44 flex-shrink-0">
+                <Link to="/" className="h-20 w-56 flex-shrink-0">
                     <img src={logo} alt="Logo" className="h-full w-full object-cover" />
                 </Link>
 
 
-                <div className="hidden lg:flex space-x-6 font-medium text-white relative">
+                <div className="hidden lg:flex space-x-6 font-medium text-black relative">
 
 
                     <div className="relative">
@@ -40,7 +75,7 @@ export default function Navbar() {
 
                         {openDropdown === "Services" && (
                             <div className="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-start justify-center pt-10 z-50">
-                                <div className="bg-white shadow-2xl rounded-2xl p-8 w-[1200px] max-h-[100vh] overflow-y-auto flex flex-col relative">
+                                <div className="bg-[#141414] shadow-2xl rounded-2xl p-10 w-[1300px] max-h-[100vh] overflow-y-auto flex flex-col relative">
 
 
                                     <button
@@ -50,97 +85,30 @@ export default function Navbar() {
                                         <RxCross2 size={24} />
                                     </button>
 
-                                    <div className="grid grid-cols-4 gap-8 ">
-
-                                        <div>
-                                            <div className=''>
-                                                <h3 className="font-semibold text-gray-900 mb-3">UI/UX Design</h3>
-                                                <ul className="space-y-2 text-gray-700 text-sm font-normal">
-                                                    <li><Link to="/services/prototyping" className="hover:text-blue-600">Prototyping</Link></li>
-                                                    <li><Link to="/services/information-architecture" className="hover:text-blue-600">Information Architecture</Link></li>
-                                                    <li><Link to="/services/web-flow" className="hover:text-blue-600">Web Flow</Link></li>
-                                                </ul>
-                                            </div>
-                                            <div className='mt-4'>
-                                                <h3 className="font-semibold text-gray-900 mb-3">App Marketing</h3>
-                                                <ul className="space-y-2 text-gray-700 text-sm font-normal">
-                                                    <li><Link to="/services/prototyping" className="hover:text-blue-600">Mobile App Marketing </Link></li>
-                                                    <li><Link to="/services/information-architecture" className="hover:text-blue-600">App Store Optimization</Link></li>
-                                                </ul>
-                                            </div>
-                                            <div className='mt-4'>
-                                                <h3 className="font-semibold text-gray-900 mb-3">Testing</h3>
-                                                <ul className="space-y-2 text-gray-700 text-sm font-normal">
-                                                    <li><Link to="/services/prototyping" className="hover:text-blue-600">Functional Testing</Link></li>
-                                                    <li><Link to="/services/information-architecture" className="hover:text-blue-600">Non-Functional Testing</Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-
-
-                                        <div>
-                                            <div>
-                                                <h3 className="font-semibold text-gray-900 mb-3">Web Development</h3>
-                                                <ul className="space-y-2 text-gray-700 text-sm font-normal">
-                                                    <li><Link to="/services/ecommerce" className="hover:text-blue-600">Ecommerce Development</Link></li>
-                                                    <li><Link to="/services/web-portal" className="hover:text-blue-600">Web Portal Development</Link></li>
-                                                    <li><Link to="/services/cms" className="hover:text-blue-600">CMS Development</Link></li>
-                                                    <li><Link to="/services/enterprise" className="hover:text-blue-600">Enterprise Web Development</Link></li>
-                                                    <li><Link to="/services/support" className="hover:text-blue-600">Support & Maintenance</Link></li>
-                                                </ul>
-                                            </div>
-                                            <div className='mt-4'>
-                                                <h3 className="font-semibold text-gray-900 mb-3">App Development</h3>
-                                                <ul className="space-y-2 text-gray-700 text-sm font-normal">
-                                                    <li><Link to="/services/ecommerce" className="hover:text-blue-600">Android App Development</Link></li>
-                                                    <li><Link to="/services/web-portal" className="hover:text-blue-600">iOS App Develpment</Link></li>
-                                                    <li><Link to="/services/cms" className="hover:text-blue-600">React Native Development   </Link></li>
-
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <h3 className="font-semibold text-gray-900 mb-3">Digital Marketing</h3>
-                                            <ul className="space-y-2 text-gray-700 text-sm font-normal">
-                                                <li><Link to="/services/android" className="hover:text-blue-600 text-lg">Search Engine Optimization</Link></li>
-                                                <li><Link to="/services/ios" className="hover:text-blue-600">Local SEO</Link></li>
-                                                <li><Link to="/services/ionic" className="hover:text-blue-600">Ecommerce SEO</Link></li>
-                                                <li><Link to="/services/react-native" className="hover:text-blue-600">Link Building</Link></li>
-                                                <li><Link to="/services/xamarin" className="hover:text-blue-600">Youtube SEO</Link></li>
-                                                <li><Link to="/services/windows" className="hover:text-blue-600">Google Recovery Services</Link></li>
-                                                <li><Link to="/services/windows" className="hover:text-blue-600">Hire Dedicated SEO Services</Link></li>
-                                            </ul>
-                                            <ul className="space-y-2 text-gray-700 text-sm font-normal mt-4">
-                                                <li><Link to="/services/android" className="hover:text-blue-600 text-lg">Social Media Marketing</Link></li>
-                                                <li><Link to="/services/ios" className="hover:text-blue-600">Facebook Marketing</Link></li>
-                                                <li><Link to="/services/ionic" className="hover:text-blue-600">Instagram Marketing</Link></li>
-                                                <li><Link to="/services/react-native" className="hover:text-blue-600">Linkedln Marketing</Link></li>
-                                                <li><Link to="/services/xamarin" className="hover:text-blue-600">Twitter Marketing</Link></li>
-                                                <li><Link to="/services/windows" className="hover:text-blue-600">Email Marketing</Link></li>
-
-                                            </ul>
-                                        </div>
-
-
-                                        <div className="bg-gradient-to-b from-cyan-400 to-cyan-600 text-white rounded-2xl p-5 flex flex-col items-center justify-center text-center">
-                                            <p className="font-semibold text-sm">SPECIAL OFFER</p>
-                                            <p className="text-xs mt-1">GET UPTO</p>
-                                            <h2 className="text-3xl font-bold mt-2">10% OFF</h2>
-                                            <p className="text-xs mt-2">ON OUR ENTIRE SPECTRUM OF WEB DEVELOPMENT SERVICES!</p>
+                                    <div className="grid grid-cols-5 gap-4 ">
+                                        {ServicesCard.map((card, idx) => (
                                             <Link
-                                                to="/contact"
-                                                className="mt-4 bg-white text-cyan-600 px-5 py-2 rounded-xl font-medium hover:bg-gray-100"
+                                                to={card.link}
+                                                key={idx}
+                                                onClick={() => setOpenDropdown(null)}
+                                                className="border border-white flex flex-col gap-4 rounded-lg px-2 p-4 
+                 items-center justify-center content-center transition-all duration-300 hover:shadow-[0_0_25px_#00f0ff] group"
                                             >
-                                                GET NOW
+                                                <img
+                                                    src={card.icon}
+                                                    alt="Company software"
+                                                    className="h-20 w-20 object-cover transition-transform duration-300 group-hover:scale-110"
+                                                />
+                                                <p className="font-[inter] text-base text-white">{card.title}</p>
                                             </Link>
-                                        </div>
+                                        ))}
+                                        
+
                                     </div>
-                                    <div className="mt-6 flex justify-between items-center border-t  border-black pt-4 text-white">
+                                    <div className="mt-6 flex justify-between items-center  pt-4 text-white">
 
                                        
-                                        <div className="flex items-center gap-3 text-[#1398c8] cursor-pointer">
+                                        <div className="flex items-center gap-3 text-[#1398c8] underline cursor-pointer">
                                             <Link to="/services"
                                                 onClick={() => setOpenDropdown(null)} className="text-xl font-medium">Our Services</Link>
                                             <FaLongArrowAltRight size={24} />
@@ -162,120 +130,13 @@ export default function Navbar() {
                     </div>
 
 
-                    <div className="relative">
-                        <button
-                            onClick={() => toggleDropdown("Technologies")}
-                            className="flex items-center gap-1 hover:text-[#1398c8] focus:outline-none"
-                        >
-                            <span className="font-[inter] font-semibold">Technologies</span>
-                            <MdArrowDropDown size={24} />
-                        </button>
-
-                        {openDropdown === "Technologies" && (
-                            <div className="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-start justify-center pt-20 z-50">
-                                <div className="bg-white shadow-2xl rounded-2xl p-8 w-[1200px] max-h-[100vh] overflow-y-auto grid grid-cols-4 gap-8 relative">
-
-
-                                    <button
-                                        onClick={() => setOpenDropdown(null)}
-                                        className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
-                                    >
-                                        <RxCross2 size={24} />
-                                    </button>
-
-
-                                    <div>
-                                        <div className=''>
-                                            <h3 className="font-semibold text-gray-900 mb-3">Cloud Services</h3>
-                                            <ul className="space-y-2 text-gray-700 text-sm font-normal">
-                                                <li><Link to="/services/prototyping" className="hover:text-blue-600">Amazon Web Services (AWS)</Link></li>
-                                                <li><Link to="/services/information-architecture" className="hover:text-blue-600">Google Apps</Link></li>
-                                                <li><Link to="/services/web-flow" className="hover:text-blue-600">Window Azure</Link></li>
-                                            </ul>
-                                        </div>
-                                        <div className='mt-4'>
-                                            <h3 className="font-semibold text-gray-900 mb-3">Backend</h3>
-                                            <ul className="space-y-2 text-gray-700 text-sm font-normal">
-                                                <li><Link to="/services/prototyping" className="hover:text-blue-600">MySQL</Link></li>
-                                                <li><Link to="/services/information-architecture" className="hover:text-blue-600">Oracle</Link></li>
-                                                <li><Link to="/services/prototyping" className="hover:text-blue-600">SQL Server</Link></li>
-                                                <li><Link to="/services/information-architecture" className="hover:text-blue-600">PostgreSQL</Link></li>
-                                                <li><Link to="/services/information-architecture" className="hover:text-blue-600">MongoDB</Link></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div>
-                                        <div>
-                                            <h3 className="font-semibold text-gray-900 mb-3">Solutions Engineering</h3>
-                                            <ul className="space-y-2 text-gray-700 text-sm font-normal">
-                                                <li><Link to="/services/ecommerce" className="hover:text-blue-600">PHP</Link></li>
-                                                <li><Link to="/services/web-portal" className="hover:text-blue-600">Cake PHP</Link></li>
-                                                <li><Link to="/services/cms" className="hover:text-blue-600">Codelgniter</Link></li>
-                                                <li><Link to="/services/enterprise" className="hover:text-blue-600">Wordpress</Link></li>
-                                                <li><Link to="/services/support" className="hover:text-blue-600">Joomla</Link></li>
-                                            </ul>
-                                        </div>
-                                        <div className='mt-4'>
-                                            <h3 className="font-semibold text-gray-900 mb-3">App Development</h3>
-                                            <ul className="space-y-2 text-gray-700 text-sm font-normal">
-                                                <li><Link to="/services/ecommerce" className="hover:text-blue-600">Android App Development</Link></li>
-                                                <li><Link to="/services/web-portal" className="hover:text-blue-600">iOS App Develpment</Link></li>
-                                                <li><Link to="/services/cms" className="hover:text-blue-600">React Native Development   </Link></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <h3 className="font-semibold text-gray-900 mb-3">Digital Marketing</h3>
-                                        <ul className="space-y-2 text-gray-700 text-sm font-normal">
-                                            <li><Link to="/services/android" className="hover:text-blue-600 text-lg">Search Engine Optimization</Link></li>
-                                            <li><Link to="/services/ios" className="hover:text-blue-600">Local SEO</Link></li>
-                                            <li><Link to="/services/ionic" className="hover:text-blue-600">Ecommerce SEO</Link></li>
-                                            <li><Link to="/services/react-native" className="hover:text-blue-600">Link Building</Link></li>
-                                            <li><Link to="/services/xamarin" className="hover:text-blue-600">Youtube SEO</Link></li>
-                                            <li><Link to="/services/windows" className="hover:text-blue-600">Google Recovery Services</Link></li>
-                                            <li><Link to="/services/windows" className="hover:text-blue-600">Hire Dedicated SEO Services</Link></li>
-                                        </ul>
-                                        <ul className="space-y-2 text-gray-700 text-sm font-normal mt-4">
-                                            <li><Link to="/services/android" className="hover:text-blue-600 text-lg">Social Media Marketing</Link></li>
-                                            <li><Link to="/services/ios" className="hover:text-blue-600">Facebook Marketing</Link></li>
-                                            <li><Link to="/services/ionic" className="hover:text-blue-600">Instagram Marketing</Link></li>
-                                            <li><Link to="/services/react-native" className="hover:text-blue-600">Linkedln Marketing</Link></li>
-                                            <li><Link to="/services/xamarin" className="hover:text-blue-600">Twitter Marketing</Link></li>
-                                            <li><Link to="/services/windows" className="hover:text-blue-600">Email Marketing</Link></li>
-
-                                        </ul>
-                                    </div>
-
-
-                                    <div className="bg-gradient-to-b from-cyan-400 to-cyan-600 text-white rounded-2xl p-5 flex flex-col items-center justify-center text-center">
-                                        <p className="font-semibold text-sm">SPECIAL OFFER</p>
-                                        <p className="text-xs mt-1">GET UPTO</p>
-                                        <h2 className="text-3xl font-bold mt-2">10% OFF</h2>
-                                        <p className="text-xs mt-2">ON OUR ENTIRE SPECTRUM OF WEB DEVELOPMENT SERVICES!</p>
-                                        <Link
-                                            to="/contact"
-                                            className="mt-4 bg-white text-cyan-600 px-5 py-2 rounded-xl font-medium hover:bg-gray-100"
-                                        >
-                                            GET NOW
-                                        </Link>
-                                    </div>
-
-                                </div>
-                            </div>
-                        )}
-                    </div>
-
                     <Link to="/work" className="hover:text-[#1398c8] font-[inter] font-semibold">
                         Industries
                     </Link>
                     <Link to="/startup-solution" className="hover:text-[#1398c8] font-[inter] font-semibold">
                         StartUp Solution
                     </Link>
-                    <Link to="/website-software" className="hover:text-[#1398c8] font-[inter] font-semibold">
+                    <Link to="/about" className="hover:text-[#1398c8] font-[inter] font-semibold">
                         About Us
                     </Link>
                 </div>

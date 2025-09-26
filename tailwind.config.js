@@ -21,6 +21,7 @@ export default {
                 spunpearl: "#afb2c0",
                 junglemist: "#bdceda",
                 submarine: "#b6bcc4",
+                electricaqua: '#66fcf1',
                 slategray: {
                     DEFAULT: "#758392",
                     alt: "#7a8c94",

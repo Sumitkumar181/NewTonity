@@ -6,6 +6,7 @@ import ShowServices from './ShowServices'
 import AboutSection from './AboutSection'
 import TechnologySection from './TechnologySection'
 
+
 export default function HomeMain() {
   return (
       <div>
@@ -14,6 +15,7 @@ export default function HomeMain() {
       <Success />
       <ShowServices />
       {/* <AboutSection /> */}
+      
       <TechnologySection/>
     </div>
   )

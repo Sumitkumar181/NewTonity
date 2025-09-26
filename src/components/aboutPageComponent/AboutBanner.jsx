@@ -1,14 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import servicesBanner from "../../assets/images/ServicesImage/servicesBanner.jpg"
+import servicesBanner from "../../assets/images/AboutImage/YBGxrz.png"
 
 
 gsap.registerPlugin(ScrollTrigger);
 
 
 
-export default function Servicesbanner() {
+export default function AboutBanner() {
 
     const sectionRef = useRef(null);
     const titleRef = useRef(null);
@@ -17,7 +17,7 @@ export default function Servicesbanner() {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-           
+
             gsap.fromTo(
                 overlayRef.current,
                 { opacity: 0 },
@@ -32,7 +32,7 @@ export default function Servicesbanner() {
                 }
             );
 
-          
+
             gsap.from(titleRef.current, {
                 y: 80,
                 opacity: 0,
@@ -44,7 +44,7 @@ export default function Servicesbanner() {
                 },
             });
 
-           
+
             gsap.from(subtitleRef.current, {
                 y: 50,
                 opacity: 0,
@@ -62,31 +62,31 @@ export default function Servicesbanner() {
     }, []);
 
     return (
-         <section ref={sectionRef} className="relative w-full">
-      <img
-        src={servicesBanner}
-        alt="Our Services Banner"
-        className="w-full h-[16rem] sm:h-[18rem] md:h-[18rem] lg:h-[24rem] object-cover"
-      />
+        <section ref={sectionRef} className="relative w-full">
+            <img
+                src={servicesBanner}
+                alt="Our Services Banner"
+                className="w-full h-[16rem] sm:h-[18rem] md:h-[18rem] lg:h-[35rem] object-cover"
+            />
 
-      <div
-        ref={overlayRef}
-        className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 px-4 sm:px-6 md:px-12 text-center"
-      >
-        <h2
-          ref={titleRef}
-          className="text-white font-[audiowide] font-medium mb-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-        >
-          Our Services
-        </h2>
-        <p
-          ref={subtitleRef}
-          className="text-white font-[inter] text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl"
-        >
-          Crafted With Care Specifically For You
-        </p>
-      </div>
-    </section>
+            <div
+                ref={overlayRef}
+                className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 px-4 sm:px-6 md:px-12 text-center"
+            >
+                <h2
+                    ref={titleRef}
+                    className="text-white font-[audiowide] font-medium mb-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+                >
+                   Development Success for modern business
+                </h2>
+                <p
+                    ref={subtitleRef}
+                    className="text-white font-[inter] text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl"
+                >
+                    We offer a wide range of services including custom software development, mobile app development, web application development, enterprise solutions, and software consulting.
+                </p>
+            </div>
+        </section>
 
     )
 }

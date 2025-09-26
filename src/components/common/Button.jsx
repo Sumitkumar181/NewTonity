@@ -54,7 +54,7 @@ export default function Button({ children, className = "", ariaLabel }) {
             onFocus={animateIn}
             onBlur={animateOut}
             aria-label={ariaLabel || (typeof children === "string" ? children : "Call to action")}
-            className={`relative overflow-hidden inline-flex items-center justify-center rounded-full border-2 border-[#1398c8] text-black font-[kanit] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-pink-400 ${className}`}
+            className={`relative overflow-hidden inline-flex items-center justify-center rounded-full border-2 border-[#66fcf1] text-black font-[kanit] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-pink-400 ${className}`}
         >
             
             <span
