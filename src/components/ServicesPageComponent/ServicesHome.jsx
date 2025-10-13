@@ -295,7 +295,7 @@ export default function ServicesHome() {
 
             </div>
             <div className='grid max-w-6xl mx-auto mt-14 gap-6 px-4 sm:px-6 lg:px-8'>
-                <h2 className="text-white text-center font-[audiowide] font-medium mb-2 text-3xl sm:text-4xl md:text-5xl lg:text-5xl">
+                <h2 className="text-white text-center font-[Geist Mono Fallback] font-semibold mb-2 text-3xl sm:text-4xl md:text-5xl lg:text-5xl">
                     Industries We Work With
                 </h2>
                 <div className='grid max-w-7xl mx-auto mt-4 gap-8 px-4 sm:px-6 lg:px-2 
@@ -309,7 +309,7 @@ export default function ServicesHome() {
                                 alt={indus.title}
                                 className="w-10 h-10 object-contain mb-2 transition-transform duration-300 group-hover:scale-110"
                             />
-                            <h2 className="text-xl sm:text-base font-[audiowide] text-white font-bold ">
+                            <h2 className="text-xl sm:text-base font-[Geist Mono Fallback] text-white font-semibold ">
                                 {indus.title}
                             </h2>
 
@@ -321,7 +321,7 @@ export default function ServicesHome() {
 
             </div>
             <div className='grid max-w-6xl mx-auto mt-14 gap-6 px-4 sm:px-6 lg:px-8'>
-                <h2 className="text-white text-center font-[audiowide] font-medium mb-2 text-3xl sm:text-4xl md:text-5xl lg:text-5xl">
+                <h2 className="text-white text-center font-[Geist Fallback] font-medium mb-2 text-3xl sm:text-4xl md:text-5xl lg:text-5xl">
                     Hire
                 </h2>
                 <div className='grid max-w-7xl mx-auto mt-4 gap-8 px-4 sm:px-6 lg:px-2 
@@ -335,7 +335,7 @@ export default function ServicesHome() {
                                 alt={hireTeam.title}
                                 className="w-10 h-10 object-contain mb-2 transition-transform duration-300 group-hover:scale-110"
                             />
-                            <h2 className="text-xl sm:text-base font-[audiowide] text-white font-bold ">
+                            <h2 className="text-xl sm:text-base font-[Geist Mono Fallback] text-white font-semibold ">
                                 {hireTeam.title}
                             </h2>
 
@@ -348,7 +348,7 @@ export default function ServicesHome() {
             </div>
 
             <div className='grid max-w-6xl mx-auto mt-14 gap-6 px-4 sm:px-6 lg:px-8'>
-                <h2 className="text-white text-center font-[audiowide] font-medium mb-2 text-3xl sm:text-4xl md:text-5xl lg:text-5xl">
+                <h2 className="text-white text-center font-[Geist Mono Fallback] font-semibold mb-2 text-3xl sm:text-4xl md:text-5xl lg:text-5xl">
                     End-to-End Digital Delivery
                 </h2>
                 <p className='text-white text-center font-[inter] text-base'><span className='text-[#1398c8]'>Core principles</span> guide every smart solution</p>
@@ -363,7 +363,7 @@ export default function ServicesHome() {
                                 alt={phase.title}
                                 className="w-14 h-14 object-contain mb-2 transition-transform duration-300 group-hover:scale-110"
                             />
-                            <h2 className="text-xl sm:text-base font-[inter] text-white font-medium ">
+                            <h2 className="text-xl sm:text-base font-[Geist Mono Fallback] text-white font-semibold ">
                                 {phase.title}
                             </h2>
 

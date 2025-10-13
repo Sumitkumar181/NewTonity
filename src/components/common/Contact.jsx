@@ -1,5 +1,5 @@
 import React from 'react'
-import CircleIconButton from './CircleIconButton';
+// import CircleIconButton from './CircleIconButton';
 import Button from './Button';
 
 export default function Contact() {
@@ -23,19 +23,14 @@ export default function Contact() {
 
                     <div className="mt-8 md:mt-10 flex items-center justify-center gap-4">
 
-                        <div className="md:hidden">
-                            <CircleIconButton onClick={() => { }} />
-                        </div>
+                        <Button
+                            className="h-24 w-24 sm:h-40 sm:w-40 md:h-[152px] md:w-[152px]  lg:h-[180px] lg:w-[180px] bg-[#66fcf1] hover:bg-[#1cc5ba] text-sm sm:text-base md:text-lg lg:text-xl transition-colors duration-300"
+                            
+                        >
+                            Let's Talk Us
+                        </Button>
 
 
-                        <div className="hidden md:block ">
-                            <Button
-                                className="h-38 w-38 bg-[#66fcf1] hover:bg-[#1cc5ba] text-base md:text-lg transition-colors duration-300"
-                                ariaLabel="Let's talk about your project"
-                            >
-                                Let's Talk Us
-                            </Button>
-                        </div>
                     </div>
                 </div>
             </div>
